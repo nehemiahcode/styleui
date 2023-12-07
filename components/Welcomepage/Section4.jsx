@@ -12,7 +12,7 @@ export default function Section4() {
       name: "Getting Started",
     },
     {
-      quote: `StyleUi is fully compatible with the new Next.js 13 app/ directory structure.`,
+      quote: `StyleUi is fully compatible with the new Next.js 13 app/ and above directory structure.`,
       icon: <SiNextdotjs />,
       name: "StyleUi + Next.js",
     },
@@ -20,7 +20,7 @@ export default function Section4() {
 
   return (
     <section className="  w-full h-auto py-16 px-2 lg:px-10 flex flex-col lg:flex-row items-center gap-x-3">
-      <div >
+      <div>
         <h1 className=" text-4xl py-2 text-white dark:text-black font-bold">
           Let&apos;s make the Web Prettier
         </h1>
@@ -28,10 +28,19 @@ export default function Section4() {
           Experience it firsthand and show us your creations!
         </p>
         <div className=" flex gap-x-3 my-3 items-center">
-          <Button className=" bg-blue-500 text-white rounded-full">
+          <Button
+            onClick={() => router.push("/introduction")}
+            className=" bg-blue-500 text-white"
+          >
             Get started
           </Button>
-          <Button startContent={<BsGithub />} className=" bg-slate-800 text-white">
+          <Button
+            onClick={() =>
+              router.push("https://github.com/nehemiahcode/styleui")
+            }
+            startContent={<BsGithub />}
+            className=" bg-slate-800 text-white"
+          >
             Github
           </Button>
         </div>
@@ -57,7 +66,6 @@ export default function Section4() {
           </div>
         ))}
       </div>
-   
     </section>
   );
 }

@@ -10,6 +10,7 @@ import { FaTwitter } from "react-icons/fa";
 import Themeswitch from "./Themeswitch";
 import { usePathname, useRouter } from "next/navigation";
 import Logo from "./Logo";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const dropdownNavs = [
   {
@@ -325,7 +326,10 @@ export default function Nav() {
                 <Button
                   isIconOnly
                   onClick={() =>
-                    router.push("", { scroll: false, prefetch: false })
+                    router.push("https://github.com/nehemiahcode/styleui", {
+                      scroll: false,
+                      prefetch: false,
+                    })
                   }
                   className="  bg-slate-800 shadow-lg text-white text-xl"
                 >
@@ -342,10 +346,10 @@ export default function Nav() {
                       prefetch: false,
                     })
                   }
-                  className="  text-black shadow-lg bg-sky-500 dark:text-white text-xl"
+                  className="text-black shadow-lg bg-sky-500 dark:text-white text-xl"
                 >
                   {" "}
-                  <FaTwitter />
+                  <RiTwitterXFill />
                 </Button>
               </Tooltip>
               <Themeswitch />

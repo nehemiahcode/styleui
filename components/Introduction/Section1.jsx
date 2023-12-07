@@ -51,7 +51,7 @@ export default function Section1() {
         >
           How is StyleUi related to TailwindCSS?
         </h1>
-        <ul className=" text-sky-900 font-bold text-lg">
+        <ul className=" text-sky-500 font-bold text-lg">
           {" "}
           <li>TailwindCSS:</li>
         </ul>
@@ -62,7 +62,7 @@ export default function Section1() {
           overrides, etc.
         </p>
 
-        <ul className=" text-sky-900 font-bold  text-lg">
+        <ul className=" text-sky-500 font-bold  text-lg">
           <li>StyleUI:</li>
         </ul>
         <p className="  text-white py-3 text-base dark:text-black">
@@ -106,9 +106,10 @@ export default function Section1() {
         <div className="flex items-center justify-end">
           <Button
             size="sm"
+          
             onClick={() => router.push("/installation")}
             endContent={<FaArrowRight />}
-            className="text-black py-1"
+            className="text-black py-1 bg-white border "
           >
             Setup
           </Button>

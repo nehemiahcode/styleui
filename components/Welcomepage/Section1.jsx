@@ -18,7 +18,7 @@ export default function Section1() {
         </p>
         <div className="flex flex-col  sm:flex-row justify-center px-4 w-full items-center gap-4 my-3">
           <Button
-            onClick={() => router.push("/component", {scroll:false})}
+            onClick={() => router.push("/introduction", {scroll:false})}
             className=" bg-blue-500 shadow-xl w-full sm:w-auto"
             endContent={
               <span className=" text-lg">
@@ -29,7 +29,7 @@ export default function Section1() {
             Get started
           </Button>
           <Button
-            onClick={() => router.push("", {scroll:false, prefetch:false})}
+            onClick={() => router.push("https://github.com/nehemiahcode/styleui", {scroll:false, prefetch:false})}
             className="w-full sm:w-auto shadow-xl"
             startContent={
               <span className=" text-xl">

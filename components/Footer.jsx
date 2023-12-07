@@ -1,8 +1,9 @@
 "use client";
 import Logo from "./Logo";
 import { BsGithub } from "react-icons/bs";
-import { FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { RiTwitterXFill } from "react-icons/ri";
 
 export default function Footer() {
   // const footerNavs = [
@@ -39,7 +40,7 @@ export default function Footer() {
         ))}
       </ul> */}
       <div className="mt-8 items-center justify-between sm:flex">
-        <div className="mt-4 text-white dark:text-gray-800 sm:mt-0">
+        <div className="mt-4 text-white text-sm dark:text-gray-800 sm:mt-0">
           &copy; 2023 Style UI <br /> Created by Nehemiah.
         </div>
         <div className="mt-6 sm:mt-0">
@@ -47,7 +48,7 @@ export default function Footer() {
             <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
               <span
                 onClick={() =>
-                  router.push("", { scroll: false, prefetch: false })
+                  router.push("https://github.com/nehemiahcode", { scroll: false, prefetch: false })
                 }
                 className=" text-white dark:text-black"
               >
@@ -64,9 +65,35 @@ export default function Footer() {
                 }
                 className=" text-white dark:text-black"
               >
-                <FaTwitter />
+                <RiTwitterXFill />
               </span>
             </li>
+            <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
+              <span
+                onClick={() =>
+                  router.push("https://www.linkden.com/in/nehemiah12", {
+                    scroll: false,
+                    prefetch: false,
+                  })
+                }
+                className=" text-white dark:text-black"
+              >
+                <FaLinkedin />
+              </span>
+            </li>
+            {/* <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
+              <span
+                onClick={() =>
+                  router.push("https://www.linkden.com/in/nehemiah12", {
+                    scroll: false,
+                    prefetch: false,
+                  })
+                }
+                className=" text-white dark:text-black"
+              >
+                <FaDiscord />
+              </span>
+            </li> */}
           </ul>
         </div>
       </div>

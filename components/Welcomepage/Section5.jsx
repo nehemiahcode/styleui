@@ -17,7 +17,7 @@ export default function Section5() {
       quote: `To report bugs, request features and contribute to the project.`,
       icon: <BsGithub />,
       name: "Github",
-      url: "",
+      url: "https://github.com/nehemiahcode/styleui",
     },
   ];
   const router = useRouter();

@@ -99,8 +99,8 @@ export function ActiveTabs() {
                 onClick={() => setActiveIcon(index)}
                 key={index}
                 className={`${
-                  activeicon === index ? "bg-blue-600  text-white" : " bg-white"
-                }    text-lg font-medium mx-1 rounded-full text-black`}
+                  activeicon === index ? "bg-blue-600  text-white" : " bg-white text-black"
+                }    text-lg font-medium mx-1 rounded-full `}
               >
                 {text}
               </Button>

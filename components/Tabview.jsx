@@ -57,7 +57,7 @@ export function NPMS() {
               >
                 {tab.icon}
               </span>
-              <span className=" text-gray-700">{tab.name}</span>
+              <span className=" text-gray-400">{tab.name}</span>
             </span>
           }
         >

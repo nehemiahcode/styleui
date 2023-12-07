@@ -100,9 +100,11 @@ export default function Tabss() {
   return (
     <>
       <div className="flex my-5 w-full flex-col">
+        <div className="overflow-x-auto">
         <Snippet className=" bg-blue-600 text-white w-[fit-content] my-3">
           npm i nextui/react framer-motion react-icons
         </Snippet>
+        </div>
         <h1 className="font-bold text-white dark:text-black text-3xl">
           Tabs with External packages
         </h1>
