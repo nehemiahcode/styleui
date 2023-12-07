@@ -1,7 +1,7 @@
 "use client"
 import { Tab } from "@nextui-org/react";
 import { TabLayout } from "../Codelayout";
-import TabView from "../Tabview";
+import TabView , {TabCode}from "../Tabview";
 
 
 export default function Navbar() {
