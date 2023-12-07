@@ -1,6 +1,6 @@
 "use client";
 import Codelayout, { TabLayout } from "../Codelayout";
-import { Button, Tab } from "@nextui-org/react";
+import { Button, Tab, Image } from "@nextui-org/react";
 import TabView, { TabCode } from "../Tabview";
 import Logo from "@/components/Logo.jsx";
 
@@ -12,7 +12,7 @@ export default function NotFound() {
             <div className="max-w-screen-xl mx-auto px-4 flex  items-center justify-start h-screen md:px-8">
                 <div className="max-w-lg mx-auto text-center flex flex-col justify-center">
                     <div className="pb-6 flex justify-center py-3">
-                    <img
+                    <Image
                     src={'./assests/logo.png'}
                     width={40}
                     height={40}
