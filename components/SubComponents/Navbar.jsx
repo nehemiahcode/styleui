@@ -2,6 +2,7 @@
 import { Tab } from "@nextui-org/react";
 import { TabLayout } from "../Codelayout";
 import TabView from "../Tabview";
+import { TabCode } from "../Tabview";
 
 
 export default function Navbar() {
@@ -12,7 +13,7 @@ export default function Navbar() {
         Footer display more information about a website and its located at the bottom of the site
       </p>
       <TabLayout>
-        <Tab key={"previe"} title={<TabView/>}></Tab>
+        <Tab key={"preview"} title={<TabView/>}></Tab>
         <Tab key={"code"} title={<TabCode/>}></Tab>
       </TabLayout>
     </div>
