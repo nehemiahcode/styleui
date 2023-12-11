@@ -16,7 +16,7 @@ export default function Logo({ size, style }) {
         alt="Style UI logo"
         className={{ size }}
       />
-      <p className="font-semibold dark:text-white text-[1rem] text-white">
+      <p className="font-semibold dark:text-black text-[1rem] text-white">
         Style{" "}
         <span className="p-2 dark:border-l-white border-l-slate-900 border-[3px] border-blue-600 rounded-full">
           Ui

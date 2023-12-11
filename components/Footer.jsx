@@ -1,17 +1,11 @@
 "use client";
 import Logo from "./Logo";
 import { BsGithub } from "react-icons/bs";
-import { FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { RiTwitterXFill } from "react-icons/ri";
 
 export default function Footer() {
-  // const footerNavs = [
-  //   {
-  //     name: "Privacy Policy",
-  //   },
-  // ];
-
   const router = useRouter();
 
   return (
@@ -26,7 +20,7 @@ export default function Footer() {
           design, 100% free and open-source.
         </p>
       </div>
-  
+
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 text-white text-sm dark:text-gray-800 sm:mt-0">
           &copy; 2023 Style UI <br /> Created by Nehemiah.
@@ -36,7 +30,10 @@ export default function Footer() {
             <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
               <span
                 onClick={() =>
-                  router.push("https://github.com/nehemiahcode", { scroll: false, prefetch: false })
+                  router.push("https://github.com/nehemiahcode", {
+                    scroll: false,
+                    prefetch: false,
+                  })
                 }
                 className=" text-white dark:text-black"
               >
@@ -59,29 +56,19 @@ export default function Footer() {
             <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
               <span
                 onClick={() =>
-                  router.push("https://www.linkedin.com/in/nehemiah12?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", {
-                    scroll: false,
-                    prefetch: false,
-                  })
+                  router.push(
+                    "https://www.linkedin.com/in/nehemiah12?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                    {
+                      scroll: false,
+                      prefetch: false,
+                    }
+                  )
                 }
                 className=" text-white dark:text-black"
               >
                 <FaLinkedin />
               </span>
             </li>
-            {/* <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
-              <span
-                onClick={() =>
-                  router.push("https://www.linkden.com/in/nehemiah12", {
-                    scroll: false,
-                    prefetch: false,
-                  })
-                }
-                className=" text-white dark:text-black"
-              >
-                <FaDiscord />
-              </span>
-            </li> */}
           </ul>
         </div>
       </div>
