@@ -67,10 +67,10 @@ export default function Section1() {
         </ul>
         <p className="  text-white py-3 text-sm dark:text-black">
           StyleUi is a UI library for React that combines the power of
-          TailwindCSS with React and other external UI libraries to provide a
-          complete components &bracket;logic and styles&bracket; for building accessible and
+          TailwindCSS with React and other external UI l ibraries to provide a
+          complete components (logic and styles) for building accessible and
           customizable user interfaces. Since STyleUI uses TailwindCSS as its
-          style engine, you can use all TailwindCSS classes within your NextUI
+          style engine, you can use all TailwindCSS classes within your StyleUI
           components, ensuring optimal compiled CSS size.
         </p>
       </div>
@@ -100,8 +100,8 @@ export default function Section1() {
         </h1>
         <p id="2" className="  text-white py-3 text-sm dark:text-black">
           No, StyleUI is specifically designed for React as it is built on top of
-          React Aria. However, you can still use the NextUI components styling
-          part with other frameworks or libraries.
+          React Aria. However, you can still use the StyleUI components styling
+          part with other frameworks or libraries like Nextjs and so on.
         </p>
         <div className="flex items-center justify-end">
           <Button

@@ -174,7 +174,7 @@ const dropdownNavs = [
   },
 ];
 
-export default function Nav() {
+export default function Nav({ style }) {
   const [state, setState] = useState(false);
   const [drapdownState, setDrapdownState] = useState({
     isActive: false,
@@ -191,6 +191,12 @@ export default function Nav() {
       path: "/component",
       isDrapdown: true,
       navs: dropdownNavs,
+    },
+    {
+      title: "Components",
+      path: "/component/banners",
+      isDrapdown: false,
+      hidden: true,
     },
     {
       title: "Github",
@@ -215,9 +221,9 @@ export default function Nav() {
       <nav
         className={`nav  relative z-[9999] border-b-2 border-slate-600 bg-slate-900 dark:bg-white w-full  md:text-sm md:border-none `}
       >
-        <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <div className="items-center gap-x-14 px-4 py-4 max-w-screen-xl mx-auto md:flex md:px-2">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Logo />
+            <Logo style={style} />
             <div className="md:hidden">
               <Button isIconOnly onClick={handleActibeBar}>
                 {state ? (
@@ -245,7 +251,7 @@ export default function Nav() {
                   <li key={idx}>
                     {item.isDrapdown ? (
                       <button
-                        className="w-full flex items-center cursor-default md:cursor-pointer justify-between gap-1 dark:text-black text-white font-medium hover:text-indigo-600"
+                        className="w-full flex lg:hidden items-center cursor-default md:cursor-pointer justify-between gap-1 dark:text-black text-white font-medium hover:text-indigo-600"
                         onClick={() =>
                           setDrapdownState({
                             idx,
@@ -257,12 +263,12 @@ export default function Nav() {
                         {drapdownState.idx == idx && drapdownState.isActive ? (
                           <span className=" text-lg text-white dark:text-black font-medium">
                             {" "}
-                            <LiaAngleDownSolid />
+                            <LiaAngleUpSolid />
                           </span>
                         ) : (
                           <span className=" text-lg text-white dark:text-black font-medium">
                             {" "}
-                            <LiaAngleUpSolid />
+                            <LiaAngleDownSolid />
                           </span>
                         )}
                       </button>
@@ -275,7 +281,9 @@ export default function Nav() {
                           pathname === item.path
                             ? "text-blue-500"
                             : "text-white"
-                        } dark:text-black  font-medium hover:text-indigo-600`}
+                        } dark:text-black ${
+                          item.hidden && "lg:block hidden"
+                        }  font-medium hover:text-red-500`}
                       >
                         {item.title}
                       </Link>
@@ -283,7 +291,7 @@ export default function Nav() {
                     {item.isDrapdown &&
                     drapdownState.idx == idx &&
                     drapdownState.isActive ? (
-                      <div className="mt-6 inset-x-0 top-20 bg-slate-900 z-[999]  dark:bg-white w-full md:absolute md:border-y md:mt-0">
+                      <div className="mt-6 inset-x-0 top-20  lg:hidden  bg-slate-900 z-[999]  dark:bg-white w-full md:absolute md:border-y md:mt-0">
                         <ul className="max-w-screen-xl overflow-y-auto h-[300px] mx-auto grid items-center gap-2 md:p-8 md:grid-cols-2 lg:grid-cols-3">
                           {item?.navs.map((dropdownItem, idx) => (
                             <li key={idx}>
@@ -299,7 +307,7 @@ export default function Nav() {
                                       <span
                                         className={` ${
                                           pathname === navItem.path
-                                            ? "text-blue-600 dark:text-blue-800"
+                                            ? "text-blue-500 dark:text-blue-800"
                                             : "text-white dark:text-black"
                                         }  duration-200 group-hover:text-indigo-600 text-sm  md:text-base`}
                                       >

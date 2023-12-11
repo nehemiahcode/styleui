@@ -26,19 +26,7 @@ export default function Footer() {
           design, 100% free and open-source.
         </p>
       </div>
-      {/* <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
-        {footerNavs.map((item, idx) => (
-          <li key={idx} className=" hover:text-gray-800">
-            <span
-              onClick={() =>
-                router.push("/privacy", { scroll: false, prefetch: false })
-              }
-            >
-              {item.name}
-            </span>
-          </li>
-        ))}
-      </ul> */}
+  
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 text-white text-sm dark:text-gray-800 sm:mt-0">
           &copy; 2023 Style UI <br /> Created by Nehemiah.

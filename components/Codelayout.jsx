@@ -14,12 +14,12 @@ export default function Codelayout({ code, filename }) {
       <div className=" w-full flex justify-end items-center bg-slate-900 py-1  px-1">
         <span className=" text-gray-400 text-sm pr-10">{filename}</span>
         {copy ? (
-          <Button startContent={<BiCheckDouble />} size="sm">
+          <Button startContent={<span className="text-lg"><BiCheckDouble /></span>} size="sm">
             copied
           </Button>
         ) : (
           <Button
-            startContent={<RxCopy />}
+            startContent={<span className="text-lg"><RxCopy /> </span>}
             size="sm"
             onClick={() => {
               navigator.clipboard.writeText(code);
@@ -33,7 +33,7 @@ export default function Codelayout({ code, filename }) {
           </Button>
         )}
       </div>
-      <div className=" h-[auto] min-h-[200px] max-h-[300px] scrollbar-hide overflow-y-auto ">
+      <div className=" h-[auto] min-h-[200px] max-h-[300px]  overflow-y-auto ">
         <SyntaxHightlighter
           language="jsx"
           style={atomOneDark}
