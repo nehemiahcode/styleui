@@ -862,8 +862,8 @@ export default function Footers() {
                     </p>
                     <ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base">
                       {footerNavs2.map((item, idx) => (
-                        <li className="text-white dark:text-black hover:text-gray-500 duration-150">
-                          <a key={idx} href={item.href}>
+                        <li key={idx} className="text-white dark:text-black hover:text-gray-500 duration-150">
+                          <a  href={item.href}>
                             {item.name}
                           </a>
                         </li>
@@ -1365,7 +1365,7 @@ export default function Footers() {
               </div>
               <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
                 {footerNavs4.map((item, idx) => (
-                  <li className=" hover:text-gray-800">
+                  <li key={idx} className=" hover:text-gray-800">
                     <a key={idx} href={item.href}>
                       {item.name}
                     </a>
