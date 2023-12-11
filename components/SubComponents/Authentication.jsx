@@ -318,7 +318,7 @@ export default function Authentication() {
                     Log in to your account
                   </h3>
                   <p className="dark:text-gray-800 text-white ">
-                    Don't have an account?{" "}
+                    Don&quot;t have an account?{" "}
                     <Link
                       href="#"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
@@ -445,7 +445,7 @@ export default function Authentication() {
                   Continue with Google
                 </button>
                 <p className="text-center dark:text-gray-800 text-white ">
-                  Don't have an account?{" "}
+                  Don&quot;t have an account?{" "}
                   <a
                     href=""
                     className="font-medium text-indigo-600 hover:text-indigo-500"
@@ -475,7 +475,7 @@ export default function Authentication() {
                       Log in to your account
                     </h3>
                     <p className="dark:text-gray-800 text-white">
-                      Don't have an account?{" "}
+                      Don&quot;t have an account?{" "}
                       <a
                         href="javascript:void(0)"
                         className="font-medium text-indigo-600 hover:text-indigo-500"
@@ -535,11 +535,6 @@ export default function Authentication() {
               <div className="flex-1 flex items-center justify-center h-screen">
                 <div className="w-full max-w-md space-y-8 px-4 shadow-xl  text-gray-600 py-2">
                   <div className="">
-                    <Image
-                      src="https://floatui.com/logo.svg"
-                      width={150}
-                      className="lg:hidden"
-                    />
                     <div className="mt-5 space-y-2">
                       <h3 className="dark:text-gray-800 text-white text-2xl font-bold sm:text-3xl">
                         Sign up
