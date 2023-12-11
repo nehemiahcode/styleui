@@ -59,7 +59,7 @@ export default function Footer() {
             <li className="w-10 h-10 border dark:border-slate-500 rounded-full flex items-center justify-center">
               <span
                 onClick={() =>
-                  router.push("https://www.linkden.com/in/nehemiah12", {
+                  router.push("https://www.linkedin.com/in/nehemiah12?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", {
                     scroll: false,
                     prefetch: false,
                   })
